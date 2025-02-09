@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    // Incorrect way to access and modify innerHTML using an incorrect selector 
+    document.querySelector('#myDiv p').innerHTML = "<p>This text has been changed.</p>";
+  </script>
+</body>
+</html>
